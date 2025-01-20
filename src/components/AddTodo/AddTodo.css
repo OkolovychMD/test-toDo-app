@@ -1,0 +1,59 @@
+.add-todo-container {
+  margin-bottom: 2rem;
+}
+
+.add-todo-trigger {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border: 2px dashed #e5e7eb;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-todo-trigger:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.add-todo-form {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.add-todo-input,
+.add-todo-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.add-todo-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.add-todo-input:focus,
+.add-todo-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.add-todo-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

@@ -1,0 +1,156 @@
+.todo-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.todo-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.todo-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.complete-button {
+  background-color: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: transparent;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.complete-button:hover {
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.complete-button.completed {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+  color: white;
+}
+
+.todo-text {
+  flex-grow: 1;
+}
+
+.todo-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.completed .todo-title {
+  color: var(--text-secondary);
+  text-decoration: line-through;
+}
+
+.todo-description {
+  margin: 4px 0 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.todo-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.todo-item.editing {
+  padding: 16px;
+}
+
+.edit-input,
+.edit-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.edit-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Common button styles */
+.submit-button,
+.save-button,
+.edit-button,
+.delete-button,
+.cancel-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.submit-button,
+.save-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.submit-button:hover,
+.save-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.edit-button {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: var(--warning-hover);
+}
+
+.delete-button {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: var(--danger-hover);
+}
+
+.cancel-button {
+  background-color: #e5e7eb;
+  color: var(--text-secondary);
+}
+
+.cancel-button:hover {
+  background-color: #d1d5db;
+}
